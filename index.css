@@ -15,12 +15,29 @@
   width: 400px;
 }
 
+#score {
+  color: #aaa;
+  font-family: monospace;
+  font-size: 1rem;
+  left: 8px;
+  position: absolute;
+  top: 8px;
+  z-index: 10;
+}
+
 #start {
+  background: none;
+  border: none;
   color: white;
+  cursor: pointer;
   font-size: 4rem;
   position: relative;
   text-decoration: none;
   top: 4rem;
+}
+
+#start:hover {
+  color: #ccc;
 }
 
 .rock {
@@ -30,27 +47,26 @@
   position: absolute;
 }
 
-.rock:before {
+.rock::before {
   content: "";
   border-bottom: 6px solid tan;
-  border-left: 6px solid #111;
-  border-right: 6px solid #111;
+  border-left: 5px solid #111;
+  border-right: 5px solid #111;
   height: 0;
   left: 0;
   position: absolute;
   top: 0;
-  width: 9px;
+  width: 10px;
 }
 
-
-.rock:after {
+.rock::after {
   content: "";
-  border-left: 6px solid #111;
-  border-right: 6px solid #111;
+  border-left: 5px solid #111;
+  border-right: 5px solid #111;
   border-top: 6px solid tan;
   bottom: 0;
   height: 0;
   left: 0;
   position: absolute;
-  width: 9px;
+  width: 10px;
 }
